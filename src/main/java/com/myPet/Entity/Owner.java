@@ -31,7 +31,4 @@ public class Owner {
 
     @Column(nullable = false, unique = true)
     private String mail;
-
-    @OneToMany(mappedBy = "owner", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private List<Pet> pets;
 }
