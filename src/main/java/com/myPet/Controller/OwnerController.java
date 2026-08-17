@@ -46,18 +46,6 @@ public class OwnerController {
         }
     }
 
-//    @GetMapping("/filtered")
-//    public ResponseEntity<Optional<Owner>> readByID(@RequestParam(required = false) Long id) {
-//        Optional<Owner> searchResult = ownerService.readByID(id);
-//
-//        if(searchResult.isPresent()) {
-//            return ResponseEntity.ok(searchResult);
-//        }
-//        else {
-//            return ResponseEntity.notFound().build();
-//        }
-//    }
-
     // Update
     @PutMapping("/{id}")
     public ResponseEntity<?> update(@PathVariable Long id, @RequestBody Owner owner) {
