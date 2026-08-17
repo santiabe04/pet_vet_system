@@ -1,0 +1,299 @@
+{
+  "info": {
+    "_postman_id": "31c10905-bcc7-4d99-b06e-912d9b6e39ae",
+    "name": "Pet-Vet-System",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "23769321"
+  },
+  "item": [
+    {
+      "name": "REGISTER_OWNER_1",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\":\"Owner 1\",\r\n    \"surname\":\"Owner 1\",\r\n    \"document\":\"1\",\r\n    \"phone\":\"1\",\r\n    \"mail\":\"owner1@owners.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{API_PATH}}/api/owners",
+          "host": [
+            "{{API_PATH}}"
+          ],
+          "path": [
+            "api",
+            "owners"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "REGISTER_OWNER_2",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\":\"Owner 2\",\r\n    \"surname\":\"Owner 2\",\r\n    \"document\":\"2\",\r\n    \"phone\":\"2\",\r\n    \"mail\":\"owner2@owners.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{API_PATH}}/api/owners",
+          "host": [
+            "{{API_PATH}}"
+          ],
+          "path": [
+            "api",
+            "owners"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "REGISTER_OWNER_409",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\":\"Owner NEW\",\r\n    \"surname\":\"Owner NEW\",\r\n    \"document\":\"1\",\r\n    \"phone\":\"1\",\r\n    \"mail\":\"owner1@owners.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{API_PATH}}/api/owners",
+          "host": [
+            "{{API_PATH}}"
+          ],
+          "path": [
+            "api",
+            "owners"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "ALTER_OWNER",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\":\"Owner 1\",\r\n    \"surname\":\"Owner 1\",\r\n    \"document\":\"1\",\r\n    \"phone\":\"5\",\r\n    \"mail\":\"owner5@owners.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{API_PATH}}/api/owners/1",
+          "host": [
+            "{{API_PATH}}"
+          ],
+          "path": [
+            "api",
+            "owners",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "ALTER_OWNER_404",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\":\"Owner 100\",\r\n    \"surname\":\"Owner 100\",\r\n    \"document\":\"100\",\r\n    \"phone\":\"100\",\r\n    \"mail\":\"owner100@owners.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{API_PATH}}/api/owners/100",
+          "host": [
+            "{{API_PATH}}"
+          ],
+          "path": [
+            "api",
+            "owners",
+            "100"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "ALTER_OWNER_409",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\":\"Owner 2\",\r\n    \"surname\":\"Owner 2\",\r\n    \"document\":\"1\",\r\n    \"phone\":\"1\",\r\n    \"mail\":\"owner1@owners.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{API_PATH}}/api/owners/2",
+          "host": [
+            "{{API_PATH}}"
+          ],
+          "path": [
+            "api",
+            "owners",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET_OWNER_BY_ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{API_PATH}}/api/owners/1",
+          "host": [
+            "{{API_PATH}}"
+          ],
+          "path": [
+            "api",
+            "owners",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET_OWNER_BY_ID_404",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{API_PATH}}/api/owners/100",
+          "host": [
+            "{{API_PATH}}"
+          ],
+          "path": [
+            "api",
+            "owners",
+            "100"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET_OWNERS",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{API_PATH}}/api/owners",
+          "host": [
+            "{{API_PATH}}"
+          ],
+          "path": [
+            "api",
+            "owners"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE_OWNER",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{API_PATH}}/api/owners/2",
+          "host": [
+            "{{API_PATH}}"
+          ],
+          "path": [
+            "api",
+            "owners",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE_OWNER_404",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{API_PATH}}/api/owners/100",
+          "host": [
+            "{{API_PATH}}"
+          ],
+          "path": [
+            "api",
+            "owners",
+            "100"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "API_PATH",
+      "value": ""
+    }
+  ]
+}
